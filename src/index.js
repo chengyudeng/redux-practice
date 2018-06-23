@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 import reducers from './reducers';
 import Auth from './Auth';
 import Dashboard from './Dashboard'; 
+import './config';
 
 const store = createStore(reducers, compose(
     applyMiddleware(thunk),
